@@ -69,27 +69,65 @@ namespace TypesOfParametersDemo210524
             //Console.WriteLine(a + " " + b);//5 10
             #endregion
 
-            temp t2 = new temp();
-            //int a = 1000;
-            //int b = 2000;
-            //int c = 3000;
-            //Console.WriteLine("before calling method :");
-            //Console.WriteLine("a= "+a+" b="+b+" c="+c);
-            //t2.changeNumber(ref a, ref b, ref c); //ref type argument
-            //Console.WriteLine("after calling method :");
-            //Console.WriteLine("a= " + a + " b=" + b + " c=" + c);
-            student s1 = new student();
-            Console.WriteLine("#### hash key of s1=" + s1.GetHashCode());
-            s1.setRoll(999);
-            Console.WriteLine("before call method roll=" + s1.getRoll());
-            t2.changeRoll(ref s1);
-            Console.WriteLine("after call method roll=" + s1.getRoll());
-            float result = t2.multiplication(b: 3.14f, a: 100);
-            Console.WriteLine(result);
-            string a = "GTH";
-            string b = "pune";
-            string c = "Maharashtra";
-            t2.stringConcat(s3:a, s1:b, s2:c);
+            #region 210524 Programs
+            //temp t2 = new temp();
+            ////int a = 1000;
+            ////int b = 2000;
+            ////int c = 3000;
+            ////Console.WriteLine("before calling method :");
+            ////Console.WriteLine("a= "+a+" b="+b+" c="+c);
+            ////t2.changeNumber(ref a, ref b, ref c); //ref type argument
+            ////Console.WriteLine("after calling method :");
+            ////Console.WriteLine("a= " + a + " b=" + b + " c=" + c);
+            //student s1 = new student();
+            //Console.WriteLine("#### hash key of s1=" + s1.GetHashCode());
+            //s1.setRoll(999);
+            //Console.WriteLine("before call method roll=" + s1.getRoll());
+            //t2.changeRoll(ref s1);
+            //Console.WriteLine("after call method roll=" + s1.getRoll());
+            //float result = t2.multiplication(b: 3.14f, a: 100);
+            //Console.WriteLine(result);
+            //string a = "GTH";
+            //string b = "pune";
+            //string c = "Maharashtra";
+            //t2.stringConcat(s3:a, s1:b, s2:c);
+            #endregion
+
+            MyClass mobj = new MyClass();
+            // float per = 23;
+            //float area= mobj.Circle_Area_Perimeter(20, out per);
+            // Console.WriteLine("Area of Circle ="+area+" Perimeter of Circle ="+per);
+            //int temp = 123;
+            //mobj.InparameterMethod(100,temp);
+
+            //student12 stud1 = new student12();
+            //stud1.roll = 111;
+            //stud1.name = "rajesh";
+            //stud1.sub1 = 45;
+            //stud1.sub2 = 45;
+            //stud1.sub3 = 55;
+            //stud1.sub4 = 75;
+            //stud1.sub5 = 85;
+
+            //mobj.showResult(stud1);
+            //Console.WriteLine("-----------------------");
+            //mobj.showResult(stud1);
+            //mobj.addition(1.1f,11, 22, 33, 44);
+            //Console.WriteLine("------------------");
+            //mobj.addition(6.5f,11, 22);
+            //Console.WriteLine("------------------");
+            //mobj.addition(11);
+            //Console.WriteLine("------------------");
+            //mobj.addition(3.14f);
+            //int[] myAray = new int[] { 1, 2, 3 };
+            //mobj.addition(myAray);
+            mobj.sum();
+            Console.WriteLine("------------------");
+            mobj.sum(111);
+            Console.WriteLine("------------------");
+            mobj.sum(111,222);
+            Console.WriteLine("------------------");
+            mobj.sum(111,222,333);
         }
     }
 }
